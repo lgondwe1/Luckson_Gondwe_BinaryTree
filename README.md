@@ -1,1 +1,5 @@
-Binary Tree that performs given operations in order to give a total for the tree solved in the program.
+Binary Tree that performs given operations in order to give a total for the tree solved in the program. 
+The node class is created to represent each node in the binary tree. The node has three attributes: value: the operator(Ex:+,-,*,/,^,%), raising an error for unsupported operators. Left: A reference to the left child (which is another Node object or None if there is no child). Right: A reference to the right child (also a Node or None).
+The evaluate function takes a node and recursively computes the result of the expression by Checking whether the node is an OperandNode (a leaf node containing a number). If so, it returns that number. If it's an OperatorNode, it Recursively evaluates the left and right subtrees to compute their values.
+Applies the operator stored in the current node to these values (e.g., adds, subtracts, multiplies, divides, raises to the power, or takes the modulus).
+The function also contains error handling for division by zero, raising an exception if such a case occurs.
